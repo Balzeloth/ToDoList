@@ -1,0 +1,140 @@
+*, *::after, *::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Urbanist', sans-serif;
+}
+
+body {
+   background: linear-gradient(180deg, #0095ff, #69f5ff) no-repeat;
+   min-height: 100vh;
+}
+
+button, input {
+   outline: none;
+   border: none;
+}
+
+.container {
+   width: 100%;
+   min-height: 100vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.todo-list {
+   box-shadow: 0 0 50px lightblue;
+   background-color: #fff;
+   width: 50%;
+   text-align: center;
+   margin: 3rem;
+}
+
+/* HEADER */
+.todo-list__head {
+   background-color:#0068b3;
+   padding: 1rem;
+}
+
+h1 {
+   color:whitesmoke;
+   letter-spacing: 1rem;
+   font-size: 4rem;
+   margin-bottom: .2em;
+   text-align: center;
+}
+
+.todo-list__head-inputs {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+#newtask {
+   margin-right: 1rem;
+   font-size: 1.5rem;
+   padding: .5em;
+   border-radius: 1em;
+   flex: 1;
+}
+
+#addtask {
+   flex: 0 0 60px;
+   min-height: 60px;
+   border-radius: 50%;
+   background-color: #fff;
+}
+
+#addtask .plus,  #addtask .plus::before{
+   margin: 0 auto;
+   display: block;
+   background-color: #0068b3;
+   width: 2.5rem;
+   height: 4px;
+   border-radius: 100px;
+}
+
+#addtask .plus::before {
+   content: '';
+   transform: rotate(90deg);
+}
+/* BODY */
+
+.todo-list__body {
+   padding: 1.5rem;
+}
+
+/* BODY ITMS */
+
+.todo-list__body-itm {
+   padding: .5rem 1rem;
+   box-shadow: 0 0 50px rgb(207, 207, 207);
+   border-radius: 1em;
+   margin-bottom: 1em;
+   font-size: 1.2rem;
+
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.todo-list__body-itm:last-child {
+   margin-bottom: 0;
+}
+
+.todo-list__body-itm-text {
+   text-align: left;
+   flex: 1;
+}
+
+.todo-list__body-itm-del {
+   flex: 0 0 50px;
+   min-height: 50px;
+   border-radius: 50%;
+   background-color: #0068b3;
+}
+
+.todo-list__body-itm-del .minus {
+   margin: 0 auto;
+   background-color: white;
+   width: 2rem;
+   height: 4px;
+   border-radius: 100px;
+}
+
+/* FOOTER */
+
+.todo-list__footer {
+   padding: 1.5rem;
+   background-color: #0068b3;
+   color: white;
+}
+
+.todo-list__footer-placeholder {
+   font-size: 1.5rem;
+   letter-spacing: .3em;
+}
